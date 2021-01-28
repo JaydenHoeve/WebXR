@@ -22,8 +22,9 @@ sphere.setPosition(-3, 0.5, -5);
 
 // create some text
 const testText = new Text('Lisser Art Museum');
-testText.setPosition(-6, 5, 0);
-testText.setFontsize(10);
+testText.setPosition(10, 1, 0);
+testText.setRotation(10, 270, 0);
+testText.setFontsize(4);
 
 // create an image
 const image = new XRImage('assets/images/Lisse-049.jpg');
@@ -46,21 +47,45 @@ image4.setRotation(0, -90, 0);
 
 // create a fifth image
 const image5 = new XRImage('assets/images/ijsjes.jpg');
-image5.setPosition(-4.44, 1, -4);
+image5.setPosition(-4.3, 3, 1);
+image5.setScale(2, 2, 2);
 image5.setRotation(0, 90, 0);
 
-// create a floor page
+// create a floor image
 const floorimage = new XRImage('assets/images/vloerafbeelding.jpg');
 floorimage.setPosition(0.2, 0.0, 2);
 floorimage.setScale(9, 9, 9);
 floorimage.setRotation(90, 90, 90);
 
-// create a exit page
+// create a wall image
+const wallimage = new XRImage('assets/images/muur1.jpg');
+wallimage.setPosition(-4.4, 4.2, 2.9);
+wallimage.setScale(9, 9, 9);
+wallimage.setRotation(0, 89.75, 0);
+
+// create a exit image
 const exitimage = new XRImage('assets/images/uitgangafbeelding.jpg');
-exitimage.setPosition(0.2, 4.5, 6.5)
+exitimage.setPosition(0.2, 4.5, 6.4)
 exitimage.setScale(9, 9, 9);
 exitimage.setRotation(0, 180, 0);
 
+// create a glass image
+const glassimage = new XRImage('assets/images/Glass.png');
+glassimage.setPosition(4.6, 4.5, 2)
+glassimage.setScale(9, 9, 9);
+glassimage.setRotation(0, 90, 0);
+
+// create a sealing image
+const plafondimage = new XRImage('assets/images/plafond.jpg');
+plafondimage.setPosition(0, 6.7, 2.3)
+plafondimage.setScale(9.5, 9.5, 9.5);
+plafondimage.setRotation(-70, -180, -90);
+
+// create LAMlogo
+const logoimage = new XRImage('assets/images/LAMlogo.png');
+logoimage.setPosition(-4.3, 4.5, 4);
+logoimage.setScale(3, 3, 3);
+logoimage.setRotation(0, 90, 0);
 
 // create a 360 image
 const image360 = new Sky('assets/360_world.jpg');
